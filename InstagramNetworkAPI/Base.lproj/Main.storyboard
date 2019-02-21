@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-J9-z2k">
+                                <rect key="frame" x="287" y="48" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.21524507705479451" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="23K-qE-XDS"/>
+                                    <constraint firstAttribute="width" constant="72" id="dZ6-Af-TUw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logOutFromInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThN-N7-jwy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfE-kq-1vF">
+                                <rect key="frame" x="151" y="537" width="72" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.45436884318374471" blue="0.49603048446224596" alpha="0.24352525684931506" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="9vY-nZ-uuc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Fetch"/>
+                                <connections>
+                                    <action selector="fetchFromInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2oc-CA-whx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="Ws4-2e-JOt">
+                                <rect key="frame" x="0.0" y="198" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="9KM-yV-drH"/>
+                                    <constraint firstAttribute="height" constant="216" id="L8i-s1-xZs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwn-Sd-4p8">
+                                <rect key="frame" x="16" y="48" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.2225840087" green="0.75172662099999998" blue="0.57819342439999999" alpha="0.23983304794520549" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="Eq1-KU-fHe"/>
+                                    <constraint firstAttribute="height" constant="30" id="vfL-JV-U5W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="logInToInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Psq-sE-wfR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zwn-Sd-4p8" firstAttribute="baseline" secondItem="lgK-J9-z2k" secondAttribute="baseline" id="4D4-WB-yRL"/>
+                            <constraint firstItem="lgK-J9-z2k" firstAttribute="leading" secondItem="Zwn-Sd-4p8" secondAttribute="trailing" constant="199" id="7P4-jA-oh5"/>
+                            <constraint firstItem="lgK-J9-z2k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="87e-cg-iuA"/>
+                            <constraint firstItem="Ws4-2e-JOt" firstAttribute="top" secondItem="Zwn-Sd-4p8" secondAttribute="bottom" constant="120" id="EO7-3g-xkh"/>
+                            <constraint firstItem="lgK-J9-z2k" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZJb-QK-wEZ"/>
+                            <constraint firstItem="SfE-kq-1vF" firstAttribute="centerX" secondItem="Ws4-2e-JOt" secondAttribute="centerX" id="bah-3C-VZJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ws4-2e-JOt" secondAttribute="trailing" id="iNV-8U-1K8"/>
+                            <constraint firstItem="Zwn-Sd-4p8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="mAy-W2-Sci"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SfE-kq-1vF" secondAttribute="bottom" constant="98" id="od7-e0-SZQ"/>
+                            <constraint firstItem="Ws4-2e-JOt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p05-sm-Juc"/>
+                            <constraint firstItem="Zwn-Sd-4p8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wcY-JX-i7j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fetchButton" destination="SfE-kq-1vF" id="QSq-iB-vVn"/>
+                        <outlet property="imageLaunch" destination="Ws4-2e-JOt" id="yli-lw-o4V"/>
+                        <outlet property="logInButton" destination="Zwn-Sd-4p8" id="F78-CS-0Sw"/>
+                        <outlet property="logOutButton" destination="lgK-J9-z2k" id="XLV-5K-aLZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="instagram" width="1920" height="1080"/>
+    </resources>
+</document>
